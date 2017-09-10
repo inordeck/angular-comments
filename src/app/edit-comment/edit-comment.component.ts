@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CommentServiceService } from '../comment-service.service';
+import { Comment } from '../comment.model';
 
 @Component({
   selector: 'app-edit-comment',
@@ -7,7 +8,7 @@ import { CommentServiceService } from '../comment-service.service';
   styleUrls: ['./edit-comment.component.css']
 })
 
-export class EditCommentComponent implements OnInit {
+export class EditCommentComponent implements OnInit {	
 
 	@Input() commentId;
 	public editing = false;

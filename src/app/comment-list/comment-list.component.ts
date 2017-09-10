@@ -9,6 +9,7 @@ import { CommentServiceService } from '../comment-service.service';
   templateUrl: './comment-list.component.html',
   styleUrls: ['./comment-list.component.css']
 })
+
 export class CommentListComponent implements OnInit {
 
 	comments: Comment[];

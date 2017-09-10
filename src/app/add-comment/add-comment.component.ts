@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CommentServiceService } from '../comment-service.service';
 import { Comment }  from '../comment.model';
 
@@ -13,6 +13,8 @@ export class AddCommentComponent implements OnInit {
 	commented: string;
 	commentor: string;
 
+	@Input() commentId;
+	
 	constructor(
 		private commentServiceService: CommentServiceService
 	) { }

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {CommentServiceService } from '../comment-service.service';
+
+import { CommentServiceService } from '../comment-service.service';
 
 @Component({
   selector: 'app-delete-comment',
@@ -21,5 +22,5 @@ export class DeleteCommentComponent implements OnInit {
 
 	ngOnInit() {
 	}
-
+	
 }

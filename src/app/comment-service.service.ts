@@ -13,6 +13,8 @@ export class CommentServiceService {
 		{ id: 1, comment: 'is it working?', author: 'billy' },
 		{ id: 2, comment: 'ok, how about now?', author: 'bob' },
 		{ id: 3, comment: 'well hold my beer and watch this...', author: 'joe' },
+		{ id: 4, comment: 'did you break it?', author: 'bubba' },
+		{ id: 5, comment: 'dammit to hells', author: 'sue' }
 	]
 
 	constructor() { }
@@ -30,7 +32,6 @@ export class CommentServiceService {
 
 	deleteComment(commentId) {
 		this.comments.splice(commentId, 1);
-		this.commentChanged.next(this.comments.slice());
 	}
 
 	editComment(commentId, editedComment, editedAuthor) {
