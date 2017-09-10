@@ -1,0 +1,8 @@
+<section>
+	<button class="btn btn-warning">edit</button>
+	<div *ngIf="editing">
+		<input [(ngModel)]="editedComment" type="text" placeholder="edit comment">
+		<input [(ngModel)]="editedAutor" type="text" placeholder="edit author">
+		<button class="btn btn-info" (click)="updatedComment(commentId, editedComment, editedAuthor)">update comment</button>
+	</div>
+</section>

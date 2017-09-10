@@ -1,0 +1,5 @@
+<section>
+	<input [(ngModel)]="commentText" type="text" [value]=commented placeholder="add comment" />
+	<input [(ngModel)]="commentAuthor" type="text" [value]=commentor placeholder="your name" />
+	<button class="btn btn-success" (click)="addNewComment(commentText, commentAuthor)">add comment</button>
+</section>

@@ -1,0 +1,8 @@
+<ul>
+    <li class="displayComment" *ngFor="let comment of comments">
+	    {{comment.comment}} -- {{comment.author}} <br>
+	    <app-edit-comment [commentId]=position></app-edit-comment>
+	    <app-delete-comment [commentId]=position></app-delete-comment>
+	    <hr>
+    </li>
+</ul>
